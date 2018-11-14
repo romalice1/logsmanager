@@ -16,6 +16,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 /************* Routes *****************/
 var routes = require('./routes');
 app.use('/api', routes)
+app.use( redirectUnmatched )
+// Redirect unmateched routes
+function redirectUnmatched(req, res) {
+    res.redirect("/api/log");
+}
 /**************************************/
 
 server.listen(4000, function(){
