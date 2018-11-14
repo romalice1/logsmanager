@@ -62,12 +62,3 @@ class Application{
 }
 
 module.exports = Application
-
-/*
-// -- creating table application -- //
-CREATE TABLE IF NOT EXISTS application(
-    application_id VARCHAR(200) NOT NULL UNIQUE,
-    application_name VARCHAR(200) NOT NULL,
-    date_created timestamp
-);
-*/

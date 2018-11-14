@@ -59,13 +59,3 @@ class Log{
 }
 
 module.exports = Log
-
-/*
-// --- creating table log --- //
-CREATE TABLE IF NOT EXISTS log(
-    date timestamp,
-    application_id VARCHAR(200) NOT NULL,
-    called_api VARCHAR(200) NOT NULL,
-    error_status VARCHAR(3) NOT NULL,
-    error_message VARCHAR(200) NOT NULL
-);*/
